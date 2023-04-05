@@ -1,7 +1,18 @@
+import Layout from '../src/components/Laoyout/Layout';
+import Card from '../src/components/Card';
+import Toggle from '../src/components/Toggle';
+
 function App() {
   return (
     <>
-      <div className='text-center'>Hello</div>
+      <Layout>
+        <Card>
+          <div>Hello</div>
+        </Card>
+        <Card>
+          <Toggle />
+        </Card>
+      </Layout>
     </>
   );
 }
