@@ -83,15 +83,18 @@ const StarRating = ({ rating, totalRating, reviews }) => {
   const stars = Array.from({ length: STAR_COUNT }, starArrayConstructor);
 
   return (
-    <div className='flex items-center gap-2 border-2 p-2'>
-      <GoogleLogo />
-      <div>
-        <div className='flex gap-[2px] text-orange-500 mb-1'>{stars}</div>
-        <div className='text-xs text-gray-500 cursor-pointer'>
-          {reviews} reviews
+    <div className='flex justify-center items-center flex-col gap-4'>
+      <div className='flex items-center gap-2 border-2 p-2'>
+        <GoogleLogo />
+        <div>
+          <div className='flex gap-[2px] text-orange-500 mb-1'>{stars}</div>
+          <div className='text-xs text-gray-500 cursor-pointer'>
+            {reviews} reviews
+          </div>
         </div>
+        <div className='text-slate-600 text-lg font-bold'>{totalRating}</div>
       </div>
-      <div className='text-slate-600 text-lg font-bold'>{totalRating}</div>
+      <p>Google rating component</p>
     </div>
   );
 };

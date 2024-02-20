@@ -97,11 +97,12 @@ const SharingPost = () => {
     </div>
   ));
   return (
-    <>
+    <div className='flex justify-center items-center flex-col gap-4'>
       <div className='flex items-center justify-center gap-4 w-[180px]'>
         {socialLinks}
       </div>
-    </>
+      <p>Component thats shares url on social media or email</p>
+    </div>
   );
 };
 
