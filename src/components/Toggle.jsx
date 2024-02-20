@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Toggle() {
   const [isOn, setIsOn] = useState(false);
   const toggleHandler = () => {
-    setIsOn(!isOn);
+    setIsOn((prev) => !prev);
   };
   return (
     <button
