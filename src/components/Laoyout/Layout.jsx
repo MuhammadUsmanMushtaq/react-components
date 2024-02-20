@@ -1,12 +1,11 @@
 const Layout = ({ children }) => {
   return (
     <>
-      <div className='text-3xl text-white text-center bg-blue-500 p-8 mb-4'>
+      <div className='text-3xl font-bold text-center p-8 mb-4'>
         React Components
       </div>
       <main
         className='
-       m-auto
         flex
         justify-center
         flex-wrap
