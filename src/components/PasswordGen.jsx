@@ -33,7 +33,7 @@ const PasswordGen = () => {
   }, [length, numAllowed, charAllowed, passwordGenerator]);
 
   return (
-    <>
+    <div className='flex justify-center items-center flex-col gap-4'>
       <div className='text-center text-2xl w-full max-w-md mx-auto rounded-lg p-4 text-white bg-gray-700 shadow-md'>
         Password Generator
         <div className='flex shadow rounded-lg overflow-hidden mb-4 mt-4'>
@@ -68,7 +68,6 @@ const PasswordGen = () => {
             <input
               type='checkbox'
               defaultChecked={numAllowed}
-              id='numberInput'
               onChange={() => {
                 setNumAllowed((prev) => !prev);
               }}
@@ -79,7 +78,6 @@ const PasswordGen = () => {
             <input
               type='checkbox'
               defaultChecked={charAllowed}
-              id='numberInput'
               onChange={() => {
                 setCharAllowed((prev) => !prev);
               }}
@@ -88,7 +86,8 @@ const PasswordGen = () => {
           </div>
         </div>
       </div>
-    </>
+      <p>Password generator </p>
+    </div>
   );
 };
 

@@ -74,7 +74,7 @@ const SharingPost = () => {
     },
 
     {
-      id: 4,
+      id: 3,
       href: `mailto:?subject=${subject}&body=${shareUrl}`,
       icon: <EmailIcon />,
     },
