@@ -3,6 +3,7 @@ import Card from '../src/components/Card';
 import Toggle from '../src/components/Toggle';
 import StarRating from '../src/components/StarRating';
 import SharingPost from '../src/components/SharingPost';
+import BgChanger from './components/BgChanger';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Card>
         <Card>
           <Toggle />
+        </Card>
+        <Card>
+          <BgChanger />
         </Card>
       </Layout>
     </>
