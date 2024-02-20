@@ -3,8 +3,8 @@ import Card from '../src/components/Card';
 import Toggle from '../src/components/Toggle';
 import StarRating from '../src/components/StarRating';
 import SharingPost from '../src/components/SharingPost';
-import BgChanger from './components/BgChanger';
 import PasswordGen from './components/PasswordGen';
+import Bounce from './components/Bounce';
 
 function App() {
   return (
@@ -19,11 +19,12 @@ function App() {
         <Card>
           <PasswordGen />
         </Card>
-        <Card>
-          <BgChanger />
-        </Card>
+
         <Card>
           <Toggle />
+        </Card>
+        <Card>
+          <Bounce />
         </Card>
       </Layout>
     </>
