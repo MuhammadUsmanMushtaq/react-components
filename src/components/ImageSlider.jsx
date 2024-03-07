@@ -32,9 +32,9 @@ const ImageSlider = ({ url, page = 1, limit = 4 }) => {
 
   useEffect(() => {
     if (url !== '') fetchImages(url);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
-  console.log(images);
   if (loading) <div>Loading</div>;
 
   if (errorMsg !== null) <div>Error occured {errorMsg}</div>;
