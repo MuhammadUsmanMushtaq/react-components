@@ -9,9 +9,10 @@ const Layout = ({ children }) => {
         flex
         justify-center
         flex-wrap
-        sm:gap-4
+        gap-4
         items-center
         p-4
+        min-w-[375px]
         '
       >
         {children}

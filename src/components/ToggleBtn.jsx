@@ -21,8 +21,8 @@ function ToggleBtn() {
         <button
           className={
             isOn
-              ? 'transition  delay-100 duration-500 absolute bottom-1 translate-x-2 rounded-full bg-gray-100 shadow-md '
-              : 'transition  delay-100 duration-500 absolute bottom-1 translate-x-[-12px] rounded-full bg-gray-100 shadow-md'
+              ? 'transition  delay-100 duration-300 absolute bottom-1 translate-x-2 rounded-full bg-gray-100 shadow-md '
+              : 'transition  delay-100 duration-300 absolute bottom-1 translate-x-[-12px] rounded-full bg-gray-100 shadow-md'
           }
         >
           {isOn ? (
